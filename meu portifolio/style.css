@@ -1,0 +1,72 @@
+*{
+    /* Opção Basicas  */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    /* Deixa a scrolada mais suave ( Não vi diferença...) */
+    scroll-behavior: smooth;
+}
+
+:root{
+
+    /* Assim declara uma variavel, deixa mais facil de codar */
+    --primaria: #4f46e5;
+    --secundaria: #7c3aed;
+    --escuro:#0f172a;
+    --MaisEscuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: rgba(255,255,255,0.1);
+}
+
+body {
+    background-color: var(--escuro);
+    color: var(--claro);
+}
+
+.navegacao {
+        position: fixed; /* Fixa a nav na tela do site */
+        top: 0;
+        background-color: rgba(15,23,42 ,0.8); /* no RGB dá para deixar a cor transparente */
+        width: 100%;
+        z-index: 100; /* Define como principal ( Fica na frente de todos)  */
+        padding: 1.5rem;
+}  
+
+.Menu {
+
+        display: flex; /* Deixa os itens um do lado do outro */
+        justify-content: center; /* Tira a bolinha de LISTA */ 
+        list-style: none;
+        gap: 3rem; /* Da uma separada  */
+
+}
+
+.menulink {
+
+    text-decoration: none; /* Tira a linha que fica embaixo dos links */
+    color: var(--claro);
+    font-weight: 500; /* Deixa as linha mais grossar */
+    position: relative;
+    padding: 0.5rem;
+}
+
+
+/* Animação no texto por baixo da linha na */
+.menulink::before{
+
+    content: '';
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: linear-gradient(90deg, var(--primaria), var(--secundaria));
+}
+
+.menulink:hover::after{
+    width: 100%;
+}

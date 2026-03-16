@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro Henrique | Portifólio</title>
+    <!-- Linka o html com o css -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- Essa é a barra de navegação -->
     <nav class="navegacao">
         <ul class = "Menu">
             <li>
-                <a href="#inicio">Inicio</a>
+                <!-- Essa class de MENU LINK serve para alteração dos textos da nav -->
+                <!-- e  href se sabe né burrão-->
+
+                <a href="#inicio" class="menulink">Inicio</a>
                 </li>
                 <li>
-                <a href="#sobre">Sobre</a>
+                <a href="#sobre" class="menulink">Sobre</a>
                 </li>
                 <li>
-                <a href="#projetos">Projetos</a>
+                <a href="#projetos" class="menulink">Projetos</a>
                 </li>
                 <li>
-                <a href="#contato">Contato</a>
+                <a href="#contato" class="menulink">Contato</a>
             </li>
         </ul>
     </nav>
 
+    <!-- Atribui MAIN por conta de tudo que colocar aqui, ser o MEIO da página-->
+    <!-- Aqui no mainn atribui o ID inicio para linkar com o href lá -->
+     <!--  -->
     <main id="Inicio" class="inicial" alt="Foto de Pedro Henrique" class="foto-perfil">
             <div>
                 <img src="./img/Untitled.jpg">
@@ -44,20 +51,27 @@
         </div>
     </section>
 
-    <section id="projetos" class="projetos">
+    <!-- Primeira Section de projetos -->
 
+    
+    <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Meus Projetos</h2>
+        <!-- Aqui vai ser a CAIXA que vai ficar por trás dos textos -->
+        <!-- Mas cada uma tem uma Caixa -->
         <div class="projeto-box">
+            <!-- Primeira CX -->
             <div class="projetos-card">
                 <img src="./img/nossos-2000-x-701-px-1.png" alt="Projeto 1" class="projetos-imagem">
                 <h3 class="info-projetos">Loja de Carros</h3>
                 <p class="paragrafo-projetos">Loja virtual moderna</p>
             </div>
+            <!-- Segunda CX -->
             <div class="projetos-card">
                 <img src="./img/nossos-2000-x-701-px-1.png" alt="Projeto 1" class="projetos-imagem">
                 <h3 class="info-projetos">Pagina de Viagens</h3>
                 <p class="paragrafo-projetos">Loja virtual moderna</p>
             </div>
+            <!-- Terceira Cx -->
             <div class="projetos-card">
                 <img src="./img/nossos-2000-x-701-px-1.png" alt="Projeto 1" class="projetos-imagem">
                 <h3 class="info-projetos">Microsoft</h3>
@@ -65,6 +79,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Essa é a Box de Formulário -->
 
     <section id="contatos" class="contatos">
         <h2 class="contatos-titulo">Contatos</h2>
