@@ -45,28 +45,31 @@ body {
 
 }
 
-.menulink {
+.menu-link {
 
     text-decoration: none; /* Tira a linha que fica embaixo dos links */
-    color: var(--claro);
+    color: white;
     font-weight: 500; /* Deixa as linha mais grossar */
     position: relative;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
 }
 
 
-/* Animação no texto por baixo da linha na */
-.menulink::before{
-
+/* Animação no texto por baixo da linha na hover (corrigido: background ao invés de background-color, e animação crescendo do centro) */
+.menu-link::after {
     content: '';
     height: 2px;
-    width: 0%;
+    width: 100%; /* Largura total do link */
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria)); /* Gradiente corrigido */
+    transform: scaleX(0); /* Começa invisível (escala 0) */
+    transform-origin: center; /* Cresce do centro */
+    transition: transform 0.3s ease; /* Animação suave de 0.3s */
 }
 
-.menulink:hover::after{
-    width: 100%;
+.menu-link:hover::after { /* No hover, cresce para visível */
+    transform: scaleX(1);
 }
+
