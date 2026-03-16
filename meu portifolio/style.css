@@ -73,3 +73,26 @@ body {
     transform: scaleX(1);
 }
 
+.inicial {
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+/* Estilo para foto de perfil circular com sombra roxa */
+.foto-perfil{
+    width: 350px; /* Fixo 200px */
+    height: 350px; /* Fixo 200px (object-fit: cover se img maior) */
+    box-shadow: 0 0 20px rgba(79,70,229,0.3); /* MUDANÇA: corrigido rba → rgba (roxinho suave) */
+    border-radius: 50%; /* Circular */
+    border: 4px solid var(--vidro); /* Borda transparente vidro */
+}
+h1 {
+
+    color: #4f46e5;
+}
