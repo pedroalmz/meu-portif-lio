@@ -94,5 +94,13 @@ body {
 }
 h1 {
 
+    font-size: 4rem;
     color: #4f46e5;
+}
+
+.cabecalho1 {
+
+    color: var(--claro);
+    font-size: 2rem;
+
 }
